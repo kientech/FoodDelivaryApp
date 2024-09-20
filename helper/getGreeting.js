@@ -5,6 +5,6 @@ export default function getGreeting() {
   } else if (currentHour < 18) {
     return "Good Afternoon!";
   } else {
-    return "Hello!";
+    return "Good Evening!";
   }
 }

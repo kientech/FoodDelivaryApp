@@ -7,6 +7,7 @@ import { StyleSheet, View, ActivityIndicator } from "react-native";
 import { useFonts } from "./hooks/useFonts";
 import LoginScreen from "./screens/LoginScreen";
 import SignUpScreen from "./screens/SignUpScreen";
+import CartScreen from "./screens/CartScreen";
 
 const Stack = createStackNavigator();
 
@@ -32,6 +33,11 @@ export default function App() {
         <Stack.Screen
           name="SignUp"
           component={SignUpScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Cart"
+          component={CartScreen}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
